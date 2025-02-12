@@ -58,7 +58,7 @@
     .then(response => {
       if( response.ok ) {
         let messages="message successfully sent";
-        document.write("message successfully sent!");
+        document.write("sent!");
         //return messages;
        // return response.text();
       } else {
