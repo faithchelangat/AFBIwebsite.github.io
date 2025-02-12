@@ -38,10 +38,10 @@
   $contact->add_message( $_POST['email'], 'Email');
   $contact->add_message( $_POST['message'], 'Message', 10);*/
 
-  //echo $contact->send();
-if ($contact) {
+  echo $contact->send();
+/*if ($contact) {
         echo "Message sent successfully!";
     } else {
         echo "Error: Failed to send message.";
-    }
+    }*/
 ?> 
