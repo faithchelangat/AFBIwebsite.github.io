@@ -17,7 +17,12 @@
 
   $contact = new PHP_Email_Form;
   $contact->ajax = true;
-  
+
+ if ($contact) {
+        echo "Message sent successfully!";
+    } else {
+        echo "Error: Failed to send message.";
+    }
   $contact->to = $receiving_email_address;
   $contact->from_name = $_POST['name'];
   $contact->from_email = $_POST['email'];
