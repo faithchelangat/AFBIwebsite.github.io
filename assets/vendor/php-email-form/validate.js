@@ -60,7 +60,8 @@
         document.write("message successfully sent!");
         //return response.text();
       } else {
-        throw new Error(`${response.status} ${response.statusText} ${response.url}`); 
+        //throw new Error(`${response.status} ${response.statusText} ${response.url}`); 
+        document.write(${response.url};
       }
     })
     .then(data => {
