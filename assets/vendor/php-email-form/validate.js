@@ -57,11 +57,12 @@
     })
     .then(response => {
       if( response.ok ) {
-        document.write("message successfully sent!");
-        //return response.text();
+        let messages="message successfully sent";
+        //document.write("message successfully sent!");
+        return messages;
+       // return response.text();
       } else {
-        //throw new Error(`${response.status} ${response.statusText} ${response.url}`); 
-        document.write(${response.url};
+        throw new Error(`${response.status} ${response.statusText} ${response.url}`); 
       }
     })
     .then(data => {
