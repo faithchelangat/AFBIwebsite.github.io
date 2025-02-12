@@ -57,9 +57,8 @@
     })
     .then(response => {
       if( response.ok ) {
-        let messages="message successfully sent";
-        document.write("sent!");
-        //return messages;
+        let messages="message successfully sent!";
+        return messages;
        // return response.text();
       } else {
         throw new Error(`${response.status} ${response.statusText} ${response.url}`); 
