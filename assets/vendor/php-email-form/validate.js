@@ -60,7 +60,8 @@
         let messages="message successfully sent!";
         //return messages;
         //alert(messages);
-        display(messages)
+        echo "<script>alert('$messages');</script>"; 
+       
        // return response.text();
       } else {
         throw new Error(`${response.status} ${response.statusText} ${response.url}`); 
