@@ -59,7 +59,7 @@
       if( response.ok ) {
         let messages="message successfully sent!";
         //return messages;
-        document.write(messages);
+        alert(messages);
        // return response.text();
       } else {
         throw new Error(`${response.status} ${response.statusText} ${response.url}`); 
