@@ -60,7 +60,7 @@
         let messages="message successfully sent!";
         //return messages;
         //alert(messages);
-        echo "<script>alert('$messages');</script>"; 
+        echo alert($messages); 
        
        // return response.text();
       } else {
